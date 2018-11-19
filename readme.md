@@ -1,3 +1,7 @@
+#### S34-L295 YelpCamp V7.1  
+**Refactor Routes**  
+* Use Express router to reorganize all routes  
+
 #### S33-L294 YelpCamp V6.5  
 **Show/Hide Links**  
 * Show/Hide auth links correctly  
