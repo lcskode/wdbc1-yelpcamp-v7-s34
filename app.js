@@ -4,12 +4,12 @@ var express         = require("express"),
     mongoose        = require("mongoose"),
     passport        = require("passport"),
     localStrategy   = require("passport-local"),
-    // Use campground schema from /models/campground.js file 
-    Campground      = require("./models/campground"),
-    // Use comment schema from /models/comment.js file
-    Comment         = require("./models/comment"),
-    // Will clear every data and create new data from DB. (error driven code)
+    // // Use campground schema from /models/campground.js file 
+    // Campground      = require("./models/campground"),
+    // // Use comment schema from /models/comment.js file
+    // Comment         = require("./models/comment"),
     User            = require("./models/user"),
+    // Will clear every data and create new data from DB. (error driven code)
     seedDB          = require("./seeds");
 
 // REQUIRING ROUTES 
@@ -66,7 +66,7 @@ app.use(function(req, res, next){
   next();
 });
 
-// tell app to use three route files 
+// tell app to use route files 
 app.use("/", indexRoutes);
 app.use("/campgrounds", campgroundRoutes);
 app.use("/campgrounds/:id/comments", commentRoutes);
